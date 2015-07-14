@@ -3,7 +3,7 @@ Onsen UI Quick Startup Guide
 
 This document describes the minimum information required to develop an app using Onsen UI.
 
-## Requirement
+## Requirement add
 
  * Node.js - [Install Node.js](http://nodejs.org)
  * Cordova - Install by `npm install cordova`

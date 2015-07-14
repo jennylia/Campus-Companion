@@ -107,29 +107,40 @@
       <ons-toolbar modifier="transparent"></ons-toolbar>
 
       <ons-list class="menu-list">
-        <!-- <ons-list-item class="menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
-          <ons-icon icon="fa-plus" fixed-width="true"></ons-icon>
-          New Post
+	  
+	     <ons-list-item class="menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
+          <ons-icon icon="fa-home" fixed-width="true"></ons-icon>
+          Home
         </ons-list-item>
- -->
+		
         <ons-list-item class="menu-item" ng-click="menu.setMainPage('page2.html', {closeMenu: true})">
-          <ons-icon icon="fa-plus" fixed-width="true"></ons-icon>
-          New Post
+          <ons-icon icon="fa-book" fixed-width="true"></ons-icon>
+          Ericademy
         </ons-list-item>
 
         <ons-list-item class="menu-item" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
-          <ons-icon icon="fa-bookmark" fixed-width="true"></ons-icon>
-          Bookmark
+          <ons-icon icon="fa-users" fixed-width="true"></ons-icon>
+          Eric Hour
         </ons-list-item>
 
         <ons-list-item class="menu-item" ng-click="menu.setMainPage('page4.html', {closeMenu: true})">
-          <ons-icon icon="fa-twitter" fixed-width="true"></ons-icon>
-          Official Twitter
+          <ons-icon icon="fa-university" fixed-width="true"></ons-icon>
+          Eric Camp
         </ons-list-item>
 		
 		 <ons-list-item class="menu-item" ng-click="menu.setMainPage('page5.html', {closeMenu: true})">
-          <ons-icon icon="fa-plus" fixed-width="true"></ons-icon>
-          New Post
+          <ons-icon icon="fa-trophy" fixed-width="true"></ons-icon>
+          Competition
+        </ons-list-item>
+		
+		   <ons-list-item class="menu-item" ng-click="menu.setMainPage('page6.html', {closeMenu: true})">
+          <ons-icon icon="fa-twitter" fixed-width="true"></ons-icon>
+          Social Media
+        </ons-list-item>
+		
+		   <ons-list-item class="menu-item" ng-click="menu.setMainPage('page6.html', {closeMenu: true})">
+          <ons-icon icon="fa-upload" fixed-width="true"></ons-icon>
+          Upload Resume
         </ons-list-item>
       </ons-list>
 
@@ -152,7 +163,7 @@
     </ons-page>
   </ons-template>
 
-  <ons-template id="page3.html">
+  <ons-template id="page2.html">
     <ons-page>
       <ons-toolbar>
         <div class="left">
@@ -160,8 +171,11 @@
             <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
           </ons-toolbar-button>
         </div>
-        <div class="center">Page 1</div>
+        <div class="center">Ericademy</div>
       </ons-toolbar>
+
+	  <ons-row>
+	  <p>Filler Information</p>
 
       <ons-row style="margin-top: 100px; text-align: center;">
         <ons-col>
@@ -177,7 +191,7 @@
 
   
 
- <ons-template id="page2.html">
+ <ons-template id="page3.html">
     <ons-page>
       <ons-toolbar>
         <div class="left">
@@ -185,7 +199,7 @@
             <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
           </ons-toolbar-button>
         </div>
-        <div class="center">Page 3 for haha</div>
+        <div class="center">Eric Hour</div>
 
   <div class="right"><ons-back-button ons-if-platform="ios">Back</ons-back-button></div>
 
@@ -196,6 +210,59 @@
         <ons-col>
           <ons-button modifier="light" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
             Toggle Menu
+          </ons-button>
+        </ons-col>
+      </ons-row>
+
+    </ons-page>
+  </ons-template>
+  
+  
+   <ons-template id="page4.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="menu.toggle()">
+            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">Eric Camp</div>
+
+  <div class="right"><ons-back-button ons-if-platform="ios">Back</ons-back-button></div>
+
+      </ons-toolbar>
+
+
+      <ons-row style="margin-top: 100px; text-align: center;">
+        <ons-col>
+          <ons-button modifier="light" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
+            Toggle Menu
+          </ons-button>
+        </ons-col>
+      </ons-row>
+
+    </ons-page>
+  </ons-template>
+  
+     <ons-template id="page5.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="menu.toggle()">
+            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">Competition</div>
+
+  <div class="right"><ons-back-button ons-if-platform="ios">Back</ons-back-button></div>
+
+      </ons-toolbar>
+
+
+      <ons-row style="margin-top: 100px; text-align: center;">
+        <ons-col>
+          <ons-button modifier="light" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
+            Competition
           </ons-button>
         </ons-col>
       </ons-row>

@@ -17,6 +17,7 @@
 
   <script>
     var module = angular.module('app', ['onsen']);
+
   </script>
 
   <style>
@@ -82,6 +83,8 @@
 </head>
 
 <body>    
+
+
   
   <ons-sliding-menu
     menu-page="menu.html" main-page="page1.html" side="left"
@@ -93,6 +96,11 @@
       <ons-toolbar modifier="transparent"></ons-toolbar>
 
       <ons-list class="menu-list">
+        <!-- <ons-list-item class="menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
+          <ons-icon icon="fa-plus" fixed-width="true"></ons-icon>
+          New Post
+        </ons-list-item>
+ -->
         <ons-list-item class="menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
           <ons-icon icon="fa-plus" fixed-width="true"></ons-icon>
           New Post
@@ -103,7 +111,7 @@
           Bookmark
         </ons-list-item>
 
-        <ons-list-item class="menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
+        <ons-list-item class="menu-item" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
           <ons-icon icon="fa-twitter" fixed-width="true"></ons-icon>
           Official Twitter
         </ons-list-item>
@@ -121,14 +129,14 @@
           Help
         </ons-list-item>
 
-        <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('page2.html', {closeMenu: true})">
+        <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
           Send feedback
         </ons-list-item>
       </ons-list>
     </ons-page>
   </ons-template>
 
-  <ons-template id="page1.html">
+  <ons-template id="page3.html">
     <ons-page>
       <ons-toolbar>
         <div class="left">
@@ -150,6 +158,7 @@
     </ons-page>
   </ons-template>
 
+
   <ons-template id="page2.html">
     <ons-page>
       <ons-toolbar>
@@ -158,7 +167,7 @@
             <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
           </ons-toolbar-button>
         </div>
-        <div class="center">Page 2</div>
+        <div class="center">Page 2 for Jenny</div>
       </ons-toolbar>
 
 
@@ -172,6 +181,34 @@
 
     </ons-page>
   </ons-template>
+
+ <ons-template id="page1.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="menu.toggle()">
+            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">Page 3 for haha</div>
+
+  <div class="right"><ons-back-button ons-if-platform="ios">Back</ons-back-button></div>
+
+      </ons-toolbar>
+
+
+      <ons-row style="margin-top: 100px; text-align: center;">
+        <ons-col>
+          <ons-button modifier="light" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
+            Toggle Menu
+          </ons-button>
+        </ons-col>
+      </ons-row>
+
+    </ons-page>
+  </ons-template>
+
+
  
 </body>
 </html>

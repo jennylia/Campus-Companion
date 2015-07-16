@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
   <link rel="stylesheet" href="styles/onsen-css-components-blue-basic-theme.css">  
   <link rel="stylesheet" href="styles/app.css"/>
+  <link rel="stylesheet" href="styles/comp.css"/>
 
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -130,7 +131,7 @@
 		
 		 <ons-list-item class="menu-item" ng-click="menu.setMainPage('page5.html', {closeMenu: true})">
           <ons-icon icon="fa-trophy" fixed-width="true"></ons-icon>
-          Competition
+          Competitions
         </ons-list-item>
 		
 		   <ons-list-item class="menu-item" ng-click="menu.setMainPage('page6.html', {closeMenu: true})">
@@ -258,17 +259,60 @@
             <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
           </ons-toolbar-button>
         </div>
-        <div class="center">Competition</div>
+        <div class="center">Competitions</div>
 
   <div class="right"><ons-back-button ons-if-platform="ios">Back</ons-back-button></div>
 
       </ons-toolbar>
-
+		<div class="container">
+			<ons-row>
+			  <div>Welcome to the Ericsson Competitions</div>
+			</ons-row>
+			<ons-row>
+			  <div class="compCent">
+				<div class="compLeft">
+					<p1><br>Hardware Design Competition:</p1>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+				</div>
+				<div class="compRight">
+					<p1><br>Software Design Competition:</p1>	
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+				</div>
+			  </div>
+			  <div class="panelspace"></div>
+			  <div class="compCent">
+				<div class="compLeft">
+					<p1><br>Embedded System Design Competition:</p1>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+				</div>
+				<div class="compRight">
+					<p1><br>Extraterrestrial Competition:</p1>	
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+				</div>
+			  </div>
+			</ons-row>
+		  </div>
 
       <ons-row style="margin-top: 100px; text-align: center;">
         <ons-col>
-          <ons-button modifier="light" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
-            Competition
+          <ons-button modifier="light" ng-click="menu.toggleMenu()"">
+            <font color="black">Toggle Menu</font>
           </ons-button>
         </ons-col>
       </ons-row>

@@ -13,22 +13,22 @@
 	width: 46%;
 	float: left;
 	margin-left: 2%;
-	background-color: #D1D0CE;
-	border-bottom: 1px solid #FFFFFF;
-	border-right: 1px solid #FFFFFF;
-	border-left: 1px solid #FFFFFF;
-	border-top: 1px solid #FFFFFF;
+	background-color: #D6D5D3;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
 	border-radius: 1vw;
 }
 
 .compRight{
 	width: 46%;
 	margin-left: 52%;
-	background-color: #D1D0CE;
-	border-bottom: 1px solid #FFFFFF;
-	border-right: 1px solid #FFFFFF;
-	border-left: 1px solid #FFFFFF;
-	border-top: 1px solid #FFFFFF;
+	background-color: #D6D5D3;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
 	border-radius: 1vw;
 }
 
